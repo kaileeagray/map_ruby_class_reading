@@ -3,6 +3,9 @@ class Song
   #song class equals songs table
   # access the DB with DB[:conn]
 
+  # The important concept to grasp here is the idea that we are not saving Ruby objects into our database.
+  # We are using the attributes of a given Ruby object to create a new row in our database table.
+
   attr_accessor :name, :album, :id
 
  def initialize(name, album, id=nil)
